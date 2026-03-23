@@ -15,7 +15,7 @@ def test_multiply():
 
 
 def test_divide():
-    assert calculator.divide(10, 2) == 4
+    assert calculator.divide(10, 2) == 5
 
 
 def test_divide_by_zero():
