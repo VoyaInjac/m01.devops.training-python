@@ -31,7 +31,9 @@ blocks:
       jobs:
         - name: ✨ Lint and Format
           commands:
-            - make lint
+            - sudo apt-get update && sudo apt-get install -y python3-pip
+            - pip3 install ruff
+            - ruff check .
       agent:
         machine:
           type: e1-standard-2
