@@ -31,9 +31,8 @@ blocks:
       jobs:
         - name: ✨ Lint and Format
           commands:
-            - sudo apt-get update && sudo apt-get install -y python3-pip
-            - pip3 install ruff
-            - ruff check .
+            - flake8 .
+            - pylint app
       agent:
         machine:
           type: e1-standard-2
