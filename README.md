@@ -1,5 +1,7 @@
 # Demo Project for Python and CI/CD
 
+# Owner: Vojica Injac
+
 This is a demo Python project designed to showcase a CI/CD pipeline for Python projects. It includes:
 
 - **Unit tests** with pytest.
@@ -18,25 +20,25 @@ source venv/bin/activate
 
 1. **Install dependencies:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 2. Run tests:
 
-    ```bash
-    make test
-    ```
+   ```bash
+   make test
+   ```
 
-    ```bash
-    make lint
-    ```
+   ```bash
+   make lint
+   ```
 
 3. Build a release wheel:
 
-    ```bash
-    make build
-    ```
+   ```bash
+   make build
+   ```
 
 ## Project structure
 
@@ -66,5 +68,3 @@ source venv/bin/activate
 6. Commit and push the change to your repository
 7. Discuss why the pipeline is failing
 8. Fix the pipeline
-
-
