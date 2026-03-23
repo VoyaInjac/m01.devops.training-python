@@ -32,6 +32,7 @@ blocks:
         - name: ✨ Lint and Format
           commands:
             - cache restore
+            - pip3 install -r requirements.txt
             - flake8 .
             - pylint .
       agent:
