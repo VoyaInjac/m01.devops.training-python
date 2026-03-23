@@ -32,6 +32,8 @@ blocks:
         - name: ✨ Lint and Format
           commands:
             - cache restore
+            - flake8 .
+            - pylint .
       agent:
         machine:
           type: e1-standard-2
