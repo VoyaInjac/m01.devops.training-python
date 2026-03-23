@@ -45,3 +45,7 @@ blocks:
         - name: "\U0001F7E2 Pytest"
           commands:
             - make test
+      agent:
+        machine:
+          type: e1-standard-2
+          os_image: ubuntu2204
