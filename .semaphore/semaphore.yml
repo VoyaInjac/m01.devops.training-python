@@ -21,6 +21,7 @@ blocks:
             - cache restore
             - pip install --cache-dir .pip_cache -r requirements.txt
             - cache store
+            - artifact push workflow app
       agent:
         machine:
           type: e1-standard-2
@@ -32,10 +33,12 @@ blocks:
       jobs:
         - name: ✨ Lint and Format
           commands:
+            - artifact push workflow app
             - 'checkout '
             - cache restore
             - flake8 .
             - pylint .
+            - make lint
       agent:
         machine:
           type: e1-standard-2
