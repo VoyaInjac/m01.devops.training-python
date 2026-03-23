@@ -46,6 +46,8 @@ blocks:
       jobs:
         - name: "\U0001F7E2 Pytest"
           commands:
+            - sudo apt-get update && sudo apt-get install -y python3-pip
+            - pip3 install pytest
             - make test
       agent:
         machine:
