@@ -32,6 +32,10 @@ blocks:
         - name: ✨ Lint and Format
           commands:
             - make lint
+      agent:
+        machine:
+          type: e1-standard-2
+          os_image: ubuntu2204
   - name: "\U0001F9EA Test Suite"
     dependencies:
       - "\U0001F6E0️ Setup and Cache"
